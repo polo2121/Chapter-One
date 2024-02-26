@@ -1,0 +1,83 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Erode', serif;
+}
+
+h1 {
+    font-weight: 700;
+
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3.75rem;
+
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 2.25rem;
+}
+
+a {
+    color: #0F2F60;
+    text-decoration: none;
+}
+
+/* Headings and Subtitle throughout the entire website */
+.heading-and-subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.heading-and-subtitle>p {
+    width: 40%;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.trending-books-list {
+    width: 100%;
+    margin: 4rem 0rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.hightlight {
+    position: relative;
+    font-weight: 700;
+    display: inline-block;
+
+}
+
+.hightlight::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+    height: 6px;
+    background-color: #E3F2FD;
+    border-radius: 10px;
+
+}
