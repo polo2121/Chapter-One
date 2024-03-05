@@ -43,6 +43,7 @@ section {
       overflow: hidden;
     }
 
+
       .tb-cards .header .titles_prices > a {
           width: 100%;
           position: absolute;
@@ -55,6 +56,12 @@ section {
           align-items: center;
           transform: translateY(0px);
         }
+
+      .tb-cards .header .titles_prices > a > h4 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
 
           .tb-cards .header .titles_prices > a > span {
             font-size: 1.625rem;
@@ -69,27 +76,28 @@ section {
     overflow: hidden;
   }
 
-  .tb-cards .body > p {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-color: #E3F2FD;
-  }
+    .tb-cards .body > p {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: #E3F2FD;
+    }
+      .tb-cards .body > p > a {
+        display: none;
+      }
 
-  .tb-cards .body > p,
-  .tb-cards .body > div {
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.6rem;
-    font-weight: 400;
-  }
+    .tb-cards .body > p,
+    .tb-cards .body > div {
+      font-size: 1.125rem; /* 18px */
+      line-height: 1.6rem;
+      font-weight: 400;
+    }
 
 
 /* Trending book footer and its CTA buttons */
 .tb-cards .footer {
   position: relative;
   height: 46px;
- 
-  
   overflow: hidden;
 }
   .tb-cards .footer .cta-btns{
@@ -104,9 +112,11 @@ section {
     .tb-cards .footer .cta-btns > a {
       display: block;
     }
-      .tb-cards .footer .cta-btns > a:first-child > button {
-        
-      }
+
+.tb-cards .control {
+  display: flex;
+  gap: 0.6rem;
+}
 
 .trending-books-slider {
   width: 40%;
@@ -235,11 +245,25 @@ section {
     .tb-cards .body > p{
       font-size: 1rem; /* 16px */
     }
+      /* view detail btn mobile show */
+      .tb-cards .body > p > a {
+        display: block;
+      }
 
+    .tb-cards .footer .cta-btns, 
+    .tb-cards .footer .cta-btns a, 
+    .tb-cards .footer .cta-btns a button{
+      width: 100%;
+    }
+    /* view detail btn desktop hidden */
+    .tb-cards .footer .cta-btns a:nth-child(2) {
+      display: none;
+    }
     .tb-cards .footer .cta-btns a button {
       font-size: 1rem; /* 16px */
       padding: 0.6rem 1.6rem;
     }
+    
   .tb-cards,.trending-books-slider {
     width: 100%;
   }
@@ -256,18 +280,17 @@ section {
   .trending-books-list{
     flex-direction: column;
   }
-  .tb-cards {
-    display: none;
-  }
-  .trending-books-slider {
-    width: 100dvw;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  
-
-  }
-  .trending-books-slide{
-    width: 100dvw;
-    scroll-snap-align: start;
-  }
+    .tb-cards {
+      display: none;
+    }
+    .trending-books-slider {
+      position: relative;
+      width: 100dvw;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+    }
+      .trending-books-slide{
+        width: 100dvw;
+        scroll-snap-align: start;
+      }
 }

@@ -54,8 +54,8 @@ button {
     font-family: 'Erode', serif;
     font-weight: 600;
     transition: .2s ease-in-out 0s;
-
 }
+
 .btn-style-1 {
     background-color: #1976D2;
     border: none;
@@ -84,6 +84,23 @@ button {
     opacity: 1;
     transform: scale(1.2);
     text-decoration: underline;
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: transform 0.1s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow:active {
+    transform: scale(0.98) !important;
+    opacity: 0.5;
+}
+.arrow:hover {
+    transform: scale(1.2);
 }
 a {
     color: #0F2F60;
@@ -165,29 +182,30 @@ a {
 
 }
 
-.book-style-1>.book-middle {
-    width: 100%;
-    height: 70%;
-    position: absolute;
-    transition: all 0.2s ease-in;
-    transform: rotateY(70deg) translateZ(100px);
-    z-index: 2;
-}
+    .book-style-1>.book-middle {
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        transition: all 0.2s ease-in;
+        transform: rotateY(70deg) translateZ(100px);
+        z-index: 2;
+    }
 
-.book-style-1>.book-middle>.white-pages {
-    width: 30%;
-    height: 100%;
-    background-color: #f1f1f1;
-    /* background-image: url("../images/book-middle.svg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        .book-style-1>.book-middle>.white-pages {
+            width: 30%;
+            height: 100%;
+            background-color: #f1f1f1;
+            /* background-image: url("../images/book-middle.svg"); */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
 .book-style-1 > .bg-circle {
     width: 240px;
     height: 240px;
     border-radius: 50%;
     background-color: #E3F2FD;
-  }
+}
 
 /* Responsive Css */
 
@@ -234,9 +252,13 @@ a {
 
     .subtitle {
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 2rem;
         text-align: center;
+    }
+    .three-line-truncate {
+        -webkit-line-clamp: 4;
+        line-clamp: 3;
     }
     .book-style-1 {
         width: 120px;
@@ -248,13 +270,6 @@ a {
 }
 /* Smallest Mobile devices */
 @media screen and (max-width: 319px) {
-    body{
-        width: 90%;
-    }
-    .heading {
-        text-align: center;
-        gap: 1rem;
-    }
     .title {
         font-size: 1.75rem; 
     }
@@ -263,4 +278,13 @@ a {
         font-size: 1rem;
         line-height: 2rem;
     }
+    .book-style-1 {
+        transform: rotateY(0deg);
+    }
+    .book-style-1 > .bg-circle {
+        width: 160px;
+        height: 160px;
+        background-color: #E3F2FD;
+    }
+    
 }
