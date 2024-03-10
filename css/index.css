@@ -5,12 +5,40 @@
   scroll-behavior: smooth;
 }
 
+/* Hero-Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-/* Trending Section */
-section {
-  padding: 4rem 0rem;
 }
+.hero-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+  .hero-section div img {
+    position: absolute;
+    z-index: 1;
+  }
+  .hero-section div h1 {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-section div a button  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 1rem 2.6rem;
 
+  }
+/* Trending Section */
 /* Trending Book Card */
 .trending-books-list {
   width: 100%;

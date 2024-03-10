@@ -4,8 +4,6 @@ body {
     scroll-behavior: smooth;
     min-height: 100vh;
     max-width: 1512px;
-    width: 80%;
-    margin: auto !important;
     color: #0F2F60;
     font-weight: 500;
     font-size: 1rem;
@@ -48,22 +46,132 @@ h4 {
 h5 {
     font-size: 1.75rem; /* 28px */
 }
+
+header {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.6rem 3rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1000px;
+    border: 1px solid #1976D2;
+
+}
+    header .logo-navlinks {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+            header ul li {
+                list-style-type: none;
+            }
+                header ul li a {
+                    color: #0F2F60;
+                    transition: all 0.2s ease-in-out;
+                    position: relative;
+
+                }
+                header ul li a:hover,.active-link  {
+                    color: #1976D2;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+
+                }
+                .active-link {
+                    font-size: 1.3rem;
+                    
+                }
+                .active-link::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    width: 100%;
+                    height: 4px;
+                    background-color: #BBDEFB;
+                    border-radius: 10px;
+                }
+    header .signup-btn {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0.4rem 0.6rem 0.4rem 2rem;
+        gap: 1rem;
+        background-color: #1976D2;
+        border-radius: 100px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transition: transform 0.3s ease-in;
+    }
+    header .signup-btn:hover {
+        transform: scale(0.9);
+        
+    }
+        header .signup-btn button {
+            background-color: transparent;
+            color: #FFFFFF;
+         
+        }
+        header .signup-btn .circle {
+            background-color: #FFFFFF;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    
+main {
+        width: 80%;
+        margin: auto !important;
+}
+section {
+    padding: 4rem 0rem 0rem 0rem;
+  }
+/* Headings and Subtitle throughout the entire website */
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+    .subtitle {
+        width: 50%;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
 button {
     border: none;
     font-size: 1.125rem; /*18px */
     font-family: 'Erode', serif;
     font-weight: 600;
-    transition: .2s ease-in-out 0s;
-}
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
 
-.btn-style-1 {
+}
+.btn-style-1, .btn-style-3{
     background-color: #1976D2;
     border: none;
-    padding: 0.6rem 2.6rem;
     border-radius: 100px;
     color: #FFFFFF;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     cursor: pointer;
+}
+.btn-style-1 {
+    padding: 0.6rem 2.6rem;
 }
 .btn-style-1:hover {
     background-color: #FFFFFF;
@@ -85,6 +193,13 @@ button {
     transform: scale(1.2);
     text-decoration: underline;
 }
+.btn-style-3 {
+    padding: 1rem 2.6rem;
+}
+.btn-style-3:hover {
+    transform: scale(0.9);
+    opacity: 0.94;
+}
 .arrow {
     width: 40px;
     height: 40px;
@@ -103,41 +218,28 @@ button {
     transform: scale(1.2);
 }
 a {
-    color: #0F2F60;
+    /* color: #0F2F60; */
     text-decoration: none;
 }
-
-/* Headings and Subtitle throughout the entire website */
-.heading{
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-}
-
-    .subtitle {
-        width: 50%;
-        font-size: 1.25rem;
-        line-height: 2rem;
-    }
-
-
-
+/* Hightligh  */
 .hightlight {
     position: relative;
     font-weight: 700;
     display: inline-block;
 
 }
-
 .hightlight::before {
     content: '';
     position: absolute;
     bottom: -4px;
     width: 100%;
     height: 6px;
-    background-color: #E3F2FD;
+    background-color: #BBDEFB;
     border-radius: 10px;
 
+}
+.hightlight-2 {
+    color: #1976D2;
 }
 .three-line-truncate {
     overflow: hidden;
@@ -153,6 +255,8 @@ a {
   .dummy-block {
     visibility: hidden;
   }
+
+/* Book Styles Section */
 .book-style-1 {
     width: 180px;
     height: 300px;
