@@ -136,6 +136,60 @@ main {
         width: 85%;
         margin: auto !important;
 }
+footer {
+    background-color: #0F2F60;
+    padding: 0rem 4rem;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+    footer .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4rem;
+    }
+        footer .links > a {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: #FFFFFF;
+            transition: all 0.2s ease-in;
+
+        }
+        footer .links > a:hover{
+            transform: scale(0.9);
+        }
+            footer .links > a > span > svg {
+                position: relative;
+                bottom: -14px;
+            }
+        footer .links > a:hover{
+           
+        }
+            footer .social-media{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+                footer .social-media div{
+                    display: flex;
+                    gap: 1rem;
+                }
+                    footer .social-media .icons a {
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        gap: 1rem;
+                        background-color: #FFFFFF;
+                        padding: 0.4rem;
+                    }
+
+    footer > p {
+        padding-bottom: 2rem;
+    }
 section {
     padding: 4rem 0rem;
   }
@@ -197,7 +251,7 @@ button {
     text-decoration: underline;
 }
 .btn-style-3 {
-    padding: 1rem 2.6rem;
+    padding: 0.8rem 2.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,6 +404,9 @@ a {
 .book-style-2 > .bg-circle{
     width: 160px;
     height: 160px;
+}
+hr {
+    border: 2px solid #FFFFFF;
 }
 /* Responsive Css */
 

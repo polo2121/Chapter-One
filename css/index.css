@@ -187,7 +187,9 @@
   display: flex;
   gap: 0.6rem;
 }
-
+.tb-cards .control button {
+  border: none;
+}
 .trending-books-slider {
   width: 40%;
   display: flex;
@@ -327,6 +329,42 @@
       }
 
 /* reading journey */
+.reading-journey > div {
+  width: 100%;
+  height: 424px;
+  background-color: #E3F2FD;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 30px;
+  /* background-image: url("../images/light.svg");
+  background-position: contain;
+  background-repeat: no-repeat; */
+}
+  .reading-journey .light{
+    position: absolute;
+  }
+  .reading-journey .girl-reading {
+    width: 40%;
+    position: absolute;
+    bottom: -14px;
+    left: 100px;
+  }
+  .reading-journey .text-info {
+    margin-left: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+    .reading-journey .text-info > p {
+      width: 80%;
+      line-height: 32px;
+    }
+    .reading-journey .text-info > p {
+      width: 80%;
+      line-height: 32px;
+    }
 
 /* Responsive Css */
 
