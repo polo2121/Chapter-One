@@ -2,8 +2,6 @@
 body {
     font-family: 'Recia', serif;
     scroll-behavior: smooth;
-    min-height: 100vh;
-    max-width: 1512px;
     color: #0F2F60;
     font-weight: 500;
     font-size: 1rem;
@@ -51,7 +49,7 @@ header {
     width: 90%;
     margin: auto;
     margin-top: 1rem;
-    padding: 0.6rem 3rem;
+    padding: 0.4rem 2rem;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -64,7 +62,7 @@ header {
         display: flex;
         align-items: center;
         gap: 2rem;
-        font-size: 1rem;
+        font-size: .8rem;
     }
         header ul {
             display: flex;
@@ -84,12 +82,7 @@ header {
                 header ul li a:hover,.active-link  {
                     color: #1976D2;
                     font-weight: 600;
-                    font-size: 1.2rem;
-
-                }
-                .active-link {
-                    font-size: 1.3rem;
-                    
+                    font-size: 1rem;
                 }
                 .active-link::after {
                     content: '';
@@ -105,7 +98,7 @@ header {
         display: flex;
         justify-content: center;
         align-content: center;
-        padding: 0.4rem 0.6rem 0.4rem 2rem;
+        padding: 0.2rem 0.4rem 0.4rem 2rem;
         gap: 1rem;
         background-color: #1976D2;
         border-radius: 100px;
@@ -123,8 +116,8 @@ header {
         }
         header .signup-btn .circle {
             background-color: #FFFFFF;
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -294,14 +287,13 @@ a {
       .control > button {
         border: 2px solid #1976D2;
       }
-/* Hightligh  */
-.hightlight {
+/* Hightlight  */
+.hightlight,.hightlight-3 {
     position: relative;
     font-weight: 700;
     display: inline-block;
-
 }
-.hightlight::before {
+.hightlight::before,.hightlight-3::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -309,11 +301,15 @@ a {
     height: 6px;
     background-color: #BBDEFB;
     border-radius: 10px;
-
 }
 .hightlight-2 {
     color: #1976D2;
 }
+.hightlight-3::after {
+    left: 0;
+    height: 4px;
+}
+
 .three-line-truncate {
     overflow: hidden;
     text-overflow: ellipsis;

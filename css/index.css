@@ -80,6 +80,39 @@
     z-index: 2;
 
   }
+
+/* Unique Services */
+.unique-services{
+  display: flex;
+  gap: 2rem;
+}
+  .unique-services > div{
+    width: 50%;
+  }
+    .unique-services .services {
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+    }
+      .unique-services .services > div {
+        display: flex;
+        gap: 4rem;
+      }
+        .unique-services .services .text{
+          line-height: 32px;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+        }
+          .unique-services .services .text .title {
+            font-weight: bold;
+            font-size: 1.4rem;
+          }
+          .unique-services .services .text p{
+            font-size: 1.1rem;
+          }
+
 /* Trending Section */
 /* Trending Book Card */
 .trending-books-list {
