@@ -370,6 +370,7 @@
   align-items: center;
   position: relative;
   border-radius: 30px;
+  overflow: hidden;
   /* background-image: url("../images/light.svg");
   background-position: contain;
   background-repeat: no-repeat; */
@@ -381,7 +382,7 @@
     width: 40%;
     position: absolute;
     bottom: -14px;
-    left: 100px;
+    left: 40px;
   }
   .reading-journey .text-info {
     margin-left: auto;
@@ -389,6 +390,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    position: relative;
+    z-index: 4;
   }
     .reading-journey .text-info > p {
       width: 80%;
@@ -418,6 +421,10 @@
   .trending-books-slider .trending-books-slide {
     width: 100%;
   }
+  .reading-journey .text-info > h3 {
+    font-size: 1rem;
+  }
+  
 }
 
 /* small screens like laptop */
