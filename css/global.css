@@ -7,6 +7,7 @@ body {
     font-weight: 500;
     font-size: 1rem;
     margin: auto;
+    position: relative;
     overflow: scroll;
   
 }
@@ -58,8 +59,6 @@ header {
     justify-content: space-between;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1000px;
-    border: 1px solid #1976D2;
-
 }
 .mobile-header {
     display: none;
@@ -416,6 +415,182 @@ a {
 hr {
     border: 2px solid #FFFFFF;
 }
+.login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Form and input css */
+form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 4rem; */
+    padding: 4rem;
+}
+.login .illustration   {
+    width: 40%;
+}
+form .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+form button{
+    width: 100%;
+    padding: 1rem 2rem;
+    color: #FFFFFF;
+    background: #1976D2;
+    border-radius: 100px;
+    transition: transform 0.2s ease-in;
+}
+form button:hover{
+ transform: scale(0.96);
+}
+form button:active {
+    opacity: 0.6;
+    transform: scale(0.8);
+}
+form .input-group a{
+    justify-content: flex-start;
+}
+form .input-group svg{
+    width: 16px;
+}
+form .input-group > div {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 0.6rem;
+}
+form .input-group > div > label {
+    font-size: 1.2rem;
+    font-family: 'Erode', serif;
+
+}
+form .input-group > div > img {
+    width: 20px;
+}
+form .input-group > input {
+    border-radius: 10px;
+ 
+    padding: 1rem;
+    border: 1px solid #0F2F60;
+    font-size: 1.2rem;
+    font-family: 'Erode', serif;
+    color: #0F2F60;
+}
+.link {
+    font-family: 'Erode', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    color: #2566CC;
+    text-decoration: underline;
+    transition: transform 0.2s ease-in-out;
+}
+.link:hover {
+    transform: translateY(-4px);
+}
+.link > svg {
+    width: 20px;
+}
+.cart {
+    position: fixed;
+    right: 60px;
+    bottom: 80px;
+    background-color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart > button > img {
+    transition: transform 0.4s ease-in-out;
+}
+.cart > button:hover > img {
+    transform: translateY(-4px);
+}
+.cart:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+}
+.cart > span {
+    position: absolute;
+    top: -20px;
+    right: -14px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #1976D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.cart-panel-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 24%;
+    height: 100%;
+    padding: 1rem 2rem;
+}
+.cart-panel-wrapper .heading {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #0F2F60;
+    padding: 1.4rem 0rem;
+}
+.cart-panel-wrapper .heading h4{
+    width: fit-content;
+    margin-block-start:0em;
+    margin-block-end: 0em;
+}
+.cart-books-wrapper {
+    padding: 2rem 0rem;
+}
+.cart-books-wrapper .cart-book {
+    display: flex;
+    gap: 1rem;
+}
+.cart-books-wrapper .cart-book .info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.cart-books-wrapper .cart-book .info > .rating > img {
+    width: 100px;
+}
+.hidden {
+    display: none !important;
+}
+.show {
+    display: flex;
+}
+
 /* Responsive Css */
 
 /* large screens like desktop */
@@ -435,11 +610,6 @@ hr {
 }
 /* small screens like laptop */
 @media screen and (max-width: 1024px)  {
-    /* body{
-        width: 100%;
-    } */
-    header {
-    }
         header ul{
             gap: 1rem;
         }
@@ -455,6 +625,17 @@ hr {
                 width: 40px;
                 height: 40px;
             }
+        .login .illustration {
+            width: 40%;
+        }
+        form {
+            width: 50%;
+            padding: 1rem;
+        }
+
+        .login-form h2 {
+            font-size: clamp(2rem,5.5vw - 1rem ,2.6rem);
+        }
 
         footer .links > div {
             grid-template-columns: repeat(2, 1fr);
@@ -501,6 +682,19 @@ hr {
         .book-style-1 > .bg-circle {
             background-color: transparent;
         }
+    .login .illustration {
+        display: none;
+    }
+    form {
+        width: 100%;
+        padding: 0rem 3rem;
+    }
+    .login {
+        padding: 1rem 0rem;
+    }
+    form .input-wrapper {
+        gap: 1rem;
+    }
     footer .links {
         flex-direction: column;
     }
@@ -558,6 +752,9 @@ hr {
         .book-style-1>.book-middle {
             transform: rotateY(50deg) translateZ(100px);
         }
+    form {
+        padding: 0;
+    } 
 }
 /* Smallest Mobile devices */
 @media screen and (max-width: 319px) {

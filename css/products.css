@@ -239,4 +239,10 @@ section {
         .product .view-detail-btn {
             margin: auto;
         }
+        
+}
+
+/* Smallest Mobile devices */
+@media screen and (max-width: 319px) {
+    
 }
