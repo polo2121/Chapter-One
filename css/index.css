@@ -302,9 +302,18 @@
 /* favorite genre section  */
 .favorite-genre {
   display: flex;
+  gap: 3rem;
+
 }
 .favorite-genre > div {
   width: 50%;
+}
+.favorite-genre > .book-shelf {
+  display: flex;
+  justify-content: center;
+}
+.favorite-genre > .book-shelf > img {
+  width: 400px;
 }
 /* review book section  */
 .review {
@@ -315,7 +324,7 @@
 .review .heading {
     display: flex;
     align-items: baseline;
-    flex-direction: row !important;
+    flex-direction: row;
 }
   .review .heading h2,
   .review .heading p{
@@ -329,22 +338,18 @@
     .review .customer-review .review-slider .slide {
       display: flex;
       gap: 4rem;
+    } 
+    .review .review-card .review-by  {
+      width: fit-content;
     }
-      .review .review-book  {
-        position: relative;
-      }
-        .review .review-book > div {
-          position: absolute;
-          bottom: 30px;
-          left: 28px;
-        }
-          .review .review-book > div > * {
-            font-size: 0.6rem;
+        .review .review-card .review-by > * {
+            font-size: 0.8rem;
+            opacity: 0.6;
           }
-          .review .review-book > div > p {
+          .review .review-card .review-by >  p {
             font-weight: 600;
           }
-          .review .review-book > div > span {
+          .review .review-card .review-by >  span {
             font-weight: 400;
           }
   .review .customer-review .control{
@@ -380,6 +385,7 @@
   position: relative;
   border-radius: 30px;
   overflow: hidden;
+  position: relative;
   /* background-image: url("../images/light.svg");
   background-position: contain;
   background-repeat: no-repeat; */
@@ -410,6 +416,9 @@
       width: 80%;
       line-height: 32px;
     }
+    .review .heading h2, .review .heading p {
+      width: 100%;
+    }
 
 /* Responsive Css */
 
@@ -431,9 +440,23 @@
     width: 100%;
   }
   .reading-journey .text-info > h3 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
-  
+  .review .customer-review .review-slider, .review .customer-review .control {
+    width: 70%;
+  }
+  .review .customer-review .review-slider .slide {
+    gap: 3rem;
+  }
+  .review .customer-review .control {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .review .review-book > img {
+    width: 100px;
+  }  
+
 }
 
 /* small screens like laptop */
@@ -488,7 +511,26 @@
       width: 40%;
       margin-left: auto;
     }
+    .favorite-genre > .book-shelf > img {
+      width: 300px;
+    }
     .favorite-genre > .popular-genre {
+      width: 100%;
+    }
+    .reading-journey > div {
+      justify-content: center;
+      padding: 0rem 1rem;
+      gap: 2rem;
+    }
+    .reading-journey .girl-reading {
+      width: fit-content;
+      position: relative;
+      bottom: -140px;
+    }
+    .reading-journey .girl-reading > img {
+      width: 240px;
+    }
+    .reading-journey .text-info {
       width: 100%;
     }
 }
@@ -521,7 +563,34 @@
   .hero-section div #true {
     bottom: 80px;
     right: -40px;
-
+  }
+  .review .heading {
+    flex-direction: column !important;
+  }
+  .review .customer-review .review-slider, .review .customer-review .control {
+    width: 100%;
+  }
+  .review .customer-review .review-slider .slide {
+    gap: 2rem;
+  }
+  .review .review-book > img {
+    width: 90px;
+  }
+  .reading-journey > div {
+    flex-direction: column;
+    gap: 0rem;
+    align-items: normal;
+    padding: 0rem 3rem 3rem 3rem;
+    height: fit-content;
+  }
+  .reading-journey .girl-reading {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .reading-journey .girl-reading > img {
+    width: 200px;
   }
 }
 /* Mobile devices */
@@ -585,18 +654,45 @@
   }
   .hero-section div #pen {
     width: 60px;
-    bottom: -16px;
+    right: 30px;
+    bottom: -40px;
   }
   .hero-section div #coffee {
     bottom: 12%;
   }
   .favorite-genre > .book-shelf {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+  }
+  .favorite-genre > .book-shelf > img {
+    width: 200px;
   }
   .popular-genre > a {
     margin: auto;
   }
+  .review .customer-review .review-slider .slide {
+    flex-direction: column; 
+  }
+  .review .review-book {
+    display: flex;
+    justify-content: center;
+  }
+  .review .review-book > img {
+    width: 120px;
+  }
+  .reading-journey .text-info  {
+    justify-content: center;
+    text-align: center;
+   }
+  .reading-journey .text-info > p {
+   width: 100%;
+  }
+  .reading-journey .text-info > a > button {
+    width: 100%;
+   }
+   .reading-journey > div {
+    padding: 1.2rem;
+    border-radius: 20px;
+   }
 }
 
 /* Smallest Mobile devices */
@@ -629,5 +725,8 @@
     bottom: 0;
     right: -20px;
     top: 40px;
+  }
+  .hero-section div #pen {
+    display: none;
   }
 }
