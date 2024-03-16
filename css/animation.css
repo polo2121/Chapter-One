@@ -49,4 +49,26 @@
     }
 }
 
+.sw-scale {
+    animation: sw-scale 0.4s ease-out forwards;
+}
+@keyframes sw-scale {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--cartWidth);
+    }
+}
+.sw-origin {
+    animation: sw-origin 0.4s ease-out forwards;
+}
+@keyframes sw-orgin {
+    0%{
+        width: var(--cartWidth);
+    }
+    100%{
+        width: 0%;
+    }
+}
 

@@ -512,29 +512,30 @@ form .input-group > input {
     width: 20px;
 }
 .cart-section {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(208, 208, 208, 0.304);
-    /* overflow: hidden; */
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
-    z-index: 4;
+    left: 0;
+    z-index: 10;
+    margin-left:auto;
+    width: 0%;
+    overflow: hidden;
 }
 .cart {
     position: fixed;
     right: 60px;
     bottom: 80px;
-    background-color: #FFFFFF;
-    width: 60px;
-    height: 60px;
+    background-color: #E3F2FD;
+    width: 30px;
+    height: 3%;
     border-radius: 50%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
+    cursor: pointer;
 }
 .cart > button {
     display: flex;
@@ -567,18 +568,22 @@ form .input-group > input {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .cart-panel-wrapper {
-    position: fixed;
+    /* position: fixed; */
+    height: 100%;
+    /* margin-left: auto; */
     top: 0;
     right: 0;
     background-color: #FFFFFF;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    width: 24%;
-    height: 100%;
     padding: 1rem 2rem;
     z-index: 4;
     overflow: scroll;
-
-
+    transition: all 0.4s ease-in-out;
+    /* transform: translateX(400px); */
+}
+.sw {
+    /* width: 40%; */
+    transform: scale(1);
 }
 .cart-panel-wrapper .heading {
     display: flex;
@@ -587,6 +592,7 @@ form .input-group > input {
     align-items: center;
     border-bottom: 1px solid #0F2F60;
     padding: 1.4rem 0rem;
+
 }
 .cart-panel-wrapper .heading h4{
     width: fit-content;
@@ -596,13 +602,14 @@ form .input-group > input {
 .cart-panel-wrapper .heading > svg {
     cursor: pointer;
     transition: transform 0.4s ease-in-out;
+    
 }
 .cart-panel-wrapper .heading > svg:hover{
     transform: scale(1.6);
 }
 .cart-books-wrapper {
     padding: 2rem 0rem;
-    height: 420px;
+    /* height: 420px; */
     overflow: scroll;
     scroll-behavior: smooth;
     /* background-color: red; */
@@ -702,7 +709,6 @@ form .input-group > input {
 }
 .cart-panel-wrapper .checkout {
     display: block;
-    width: 100%;
 }
 .hidden {
     display: none !important;
@@ -726,7 +732,7 @@ form .input-group > input {
         padding: 0rem 2rem;
     }
     .cart-panel-wrapper {
-        width: 30%;
+        /* width: 30%; */
     }
     
  
@@ -767,14 +773,6 @@ form .input-group > input {
         footer .links > div > a {
             gap: 0rem;
         }
-        .cart-panel-wrapper {
-            width: 40%;
-        }
-        .cart-books-wrapper {
-            padding: 0rem;
-            height: 480px;
-        }
-
 }
 /*  ipad, tablets */
 @media screen and (max-width: 768px)  {
@@ -837,9 +835,6 @@ form .input-group > input {
             border-bottom: 0.4px solid rgb(189, 189, 189);
             padding-bottom: 1rem;
         }
-    .cart-panel-wrapper {
-            width: 50%;
-    }
 }
 /* Mobile devices */
 @media screen and (max-width: 548px){
@@ -860,9 +855,6 @@ form .input-group > input {
     .mobile-header ul {
         background-color: red;
         display: none;
-    }
-    .cart-panel-wrapper {
-        width: 60%;
     }
 }
 @media screen and (max-width: 480px) {
@@ -891,9 +883,7 @@ form .input-group > input {
     form {
         padding: 0;
     } 
-    .cart-panel-wrapper {
-        width: 70%;
-    }
+
     .cart-books-wrapper .cart-book .info > .rating > img {
         width: 80px;
     }
@@ -930,8 +920,4 @@ form .input-group > input {
         height: 160px;
         background-color: #E3F2FD;
     }
-    .cart-panel-wrapper {
-        width: 80%;
-    }
-    
 }
