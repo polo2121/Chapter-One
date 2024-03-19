@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>Contact Page</title>
 
     <!-- Link for two fonts used in the website -->
     <link href="https://api.fontshare.com/v2/css?f[]=erode@700,300,500,600,400&f[]=recia@700,500,600,400&display=swap"
         rel="stylesheet">
 
+
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/animation.css">
+
+
+
 </head>
 
 <body>
@@ -34,7 +39,7 @@
                     <a href="./about.html">About</a>
                 </li>
                 <li>
-                    <a href="./contact.html">Support</a>
+                    <a href="./support.html">Support</a>
                 </li>
             </ul>
         </div>
@@ -46,12 +51,14 @@
         </a>
         <div class="mobile-header">
             <a href="/index.html">
-                <img width="46px" src="./images/Logo.svg" alt="logo image">
+                <img width="40px" src="./images/Logo.svg" alt="logo image">
             </a>
-            <button>
-                <img src="./images/burger.svg" alt="burger image">
+            <span>Support</span>
+            <button id="mobile-navi-trigger">
+                <img width="20px" src="./images/burger.svg" alt="burger image" id="open-nav-btn">
+                <img width="16px" class="hidden" src="./images/cross.svg" alt="cross image" id="close-nav-btn">
             </button>
-            <div class="nav-panel">
+            <div class="navi-panel hidden" id="mobile-nav">
                 <ul>
                     <li>
                         <a href="./index.html" class="active-link">Home</a>
@@ -65,137 +72,51 @@
                     <li>
                         <a href="./contact.html">Support</a>
                     </li>
+                    <li>
+                        <a href="./login.html">Sign In</a>
+                    </li>
                 </ul>
             </div>
-
         </div>
     </header>
 
-
     <!-- Main -->
     <main>
-        <!-- Introduction Section -->
-        <section class="intro-card">
-            <img class="plant" src="./images/plants.svg" alt="plant svg">
-            <div class="intro-text">
-                <span>Explore limitless books and start your journey.</span>
-                <p> With our vast collection of millions of books, delve into a world of
-                    imagination and find your next captivating read!
+        <section class="contact-section">
+            <form class="login-form contact-form">
+                <h2>Get in touch, we'd love to hear from you!</h2>
+                <p>
+                    Please provide us your email address and we will reach out to
+                    you within a couple of minutes.
                 </p>
-            </div>
-            <img class="girl-on-book" src="./images/girl on book.svg" alt="girls on book svg">
+                <div class="input-wrapper">
+                    <!-- Email -->
+                    <div class="input-group">
+                        <div>
+                            <img src="./images/email.svg" alt="email icon">
+                            <label for="email">Email</label>
+                        </div>
+                        <input name="email" id="email" type="text" placeholder="e.g. example@gmail.com" required>
+                    </div>
 
-        </section>
+                    <button type="submit">
+                        Send Now
+                    </button>
+                    <a class="link" href="./products.html">
+                        Back To Browsing
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.5 6H5.25C4.65326 6 4.08097 6.23705 3.65901 6.65901C3.23705 7.08097 3 7.65326 3 8.25V18.75C3 19.3467 3.23705 19.919 3.65901 20.341C4.08097 20.7629 4.65326 21 5.25 21H15.75C16.3467 21 16.919 20.7629 17.341 20.341C17.7629 19.919 18 19.3467 18 18.75V10.5M7.5 16.5L21 3M21 3H15.75M21 3V8.25"
+                                stroke="#2466CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-        <!-- Products Section -->
-        <section class="product-section">
-            <!-- Title -->
-            <div class="heading">
-                <h2>All Genres</h2>
-            </div>
-
-            <!-- Products -->
-            <div class="products-wrapper">
-                <div class="product">
-                    <a class="view-detail-btn" href="">
-                        <button class="btn-style-2">
-                            View Detail
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 12H8M16 12C16 11.2998 14.0057 9.99153 13.5 9.5M16 12C16 12.7002 14.0057 14.0085 13.5 14.5"
-                                    stroke="#0F2F60" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M21.5 12C21.5 7.52166 21.5 5.28249 20.1088 3.89124C18.7175 2.5 16.4783 2.5 12 2.5C7.5217 2.5 5.2825 2.5 3.8912 3.89124C2.5 5.28249 2.5 7.52166 2.5 12C2.5 16.4783 2.5 18.7175 3.8912 20.1088C5.2825 21.5 7.5217 21.5 12 21.5C16.4783 21.5 18.7175 21.5 20.1088 20.1088C21.5 18.7175 21.5 16.4783 21.5 12Z"
-                                    stroke="#0F2F60" stroke-width="1.5" />
-                            </svg>
-                        </button>
                     </a>
-                    <div class="background">
-                        <!-- 3d Book -->
-                        <div class="book-style-2 book">
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/atomic_habits.jpeg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                            <img class="shadow" src="./images/book shadow.svg" alt="book shadow">
-                        </div>
-                    </div>
-                    <div class="details dpr">
-                        <span class="price">£18.99</span>
-                        <img width="100px" class="rating" src="./images/4-review.svg" alt="">
-                    </div>
-
-                    <div class="details dna">
-                        <a class="name" href="">
-                            <span>
-                                Atomic Habits
-                            </span>
-                        </a>
-                        <div class="action">
-                            <button>Add</button>
-                        </div>
-                    </div>
-
                 </div>
-
-                <div class="product">
-                    <a class="view-detail-btn" href="">
-                        <button class="btn-style-2">
-                            View Detail
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 12H8M16 12C16 11.2998 14.0057 9.99153 13.5 9.5M16 12C16 12.7002 14.0057 14.0085 13.5 14.5"
-                                    stroke="#0F2F60" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M21.5 12C21.5 7.52166 21.5 5.28249 20.1088 3.89124C18.7175 2.5 16.4783 2.5 12 2.5C7.5217 2.5 5.2825 2.5 3.8912 3.89124C2.5 5.28249 2.5 7.52166 2.5 12C2.5 16.4783 2.5 18.7175 3.8912 20.1088C5.2825 21.5 7.5217 21.5 12 21.5C16.4783 21.5 18.7175 21.5 20.1088 20.1088C21.5 18.7175 21.5 16.4783 21.5 12Z"
-                                    stroke="#0F2F60" stroke-width="1.5" />
-                            </svg>
-                        </button>
-                    </a>
-                    <div class="background">
-                        <!-- 3d Book -->
-                        <div class="book-style-2 book">
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/ikigai.jpg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                            <img class="shadow" src="./images/book shadow.svg" alt="book shadow">
-                        </div>
-                    </div>
-                    <div class="details dpr">
-                        <span class="price">£10.59</span>
-                        <img width="100px" class="rating" src="./images/4-review.svg" alt="">
-                    </div>
-
-                    <div class="details dna">
-                        <a class="name" href="">
-                            <span>
-                                Ikigai: The Japanese Scret
-                                to Long and Happy life
-                            </span>
-                        </a>
-                        <div class="action">
-                            <button>Add</button>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-
+                <img id="message" src="./images/message.svg" alt="message image">
+                <img id="question-boy" src="./images/question-boy.svg" alt="question-boy image">
+                <img id="contact-girl" src="./images/contact-girl.svg" alt="contact-girl image">
+            </form>
         </section>
-
         <!-- shopping cart section -->
         <div class="cart" id="open-cart-btn">
             <button>
@@ -207,7 +128,7 @@
         </div>
 
         <!-- shopping cart panel section -->
-        <div class="cart-section" id="cart">
+        <div class="cart-section" id="cart" style="--cartWidth: 30%">
             <div class="cart-panel-wrapper">
                 <div class="heading">
                     <h4>My Cart</h4>
@@ -267,7 +188,7 @@
                     <span>Subtotal</span>
                     <span>$29.91</span>
                 </div>
-                <a class="checkout" href="">
+                <a class="checkout" href="./review-order.html">
                     <button class="btn-style-1">
                         Checkout Now
                     </button>
@@ -275,7 +196,6 @@
 
             </div>
         </div>
-
     </main>
 
     <!-- Footer -->
@@ -348,8 +268,9 @@
 
     </footer>
 
-
     <script src="./js/add-to-cart.js"></script>
+    <script src="./js/nav-toggle.js"></script>
+
 
 </body>
 

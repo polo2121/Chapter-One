@@ -32,12 +32,6 @@ function checkMediaQuery() {
   }
 }
 
-// openCartBtn.forEach((cartBtn) => {
-//   cartBtn.addEventListener("click", () => {
-//     cart.classList.add("sw-scale");
-//   });
-// });
-
 checkMediaQuery();
 
 openCartBtn.addEventListener("click", () => {

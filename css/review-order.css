@@ -17,11 +17,11 @@
     flex-direction: column;
     gap: 1.2rem;
 }
-.manage > button {
+.manage a > button {
     width: fit-content;
     padding: 0;
 }
-.manage > span:nth-child(2), .manage > button {
+.manage > span:nth-child(2), .manage > a > button {
     padding: 0rem 1rem;
 }
 .manage > span:nth-child(1) {

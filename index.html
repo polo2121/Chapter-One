@@ -50,23 +50,30 @@
             <a href="/index.html">
                 <img width="46px" src="./images/Logo.svg" alt="logo image">
             </a>
-            <button>
-                <img src="./images/burger.svg" alt="burger image">
+            <h4>Home</h4>
+            <button id="mobile-navi-trigger">
+                <img src="./images/burger.svg" alt="burger image" id="open-nav-btn">
+                <img class="hidden" src="./images/cross.svg" alt="cross image" id="close-nav-btn">
             </button>
-            <ul>
-                <li>
-                    <a href="./index.html" class="active-link">Home</a>
-                </li>
-                <li>
-                    <a href="./products.html">Books</a>
-                </li>
-                <li>
-                    <a href="./about.html">About</a>
-                </li>
-                <li>
-                    <a href="./support">Support</a>
-                </li>
-            </ul>
+            <div class="navi-panel hidden" id="mobile-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html" class="active-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="./products.html">Books</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./support">Support</a>
+                    </li>
+                    <li>
+                        <a href="./login.html">Sign In</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -914,6 +921,8 @@
 
     <script src="./js/slide.js"></script>
     <script src="./js/add-to-cart.js"></script>
+    <script src="./js/nav-toggle.js"></script>
+
 
 
 </body>
