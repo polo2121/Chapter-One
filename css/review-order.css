@@ -108,6 +108,9 @@
     border-radius: 100px;
     transition: transform 0.4s ease-in-out;
 }
+.paynow > button > a{
+    color: #1976D2;
+}
 .paynow > button:hover {
     transform: scale(0.8);
 }

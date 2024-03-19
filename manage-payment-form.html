@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paymaent Page</title>
+
+    <!-- Link for two fonts used in the website -->
+    <link href="https://api.fontshare.com/v2/css?f[]=erode@700,300,500,600,400&f[]=recia@700,500,600,400&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/form.css">
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-navlinks">
+            <a href="/index.html">
+                <img width="46px" src="./images/Logo.svg" alt="logo image">
+            </a>
+            <ul>
+                <li>
+                    <a href="./index.html" class="active-link">Home</a>
+                </li>
+                <li>
+                    <a href="./products.html">Books</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Support</a>
+                </li>
+            </ul>
+        </div>
+        <a href="./login.html" class="signup-btn">
+            <button>Sign Up Now</button>
+            <div class="circle">
+                <img src="./images/outlined arrow.svg" alt="outlined arrow icon">
+            </div>
+        </a>
+        <div class="mobile-header">
+            <a href="/index.html">
+                <img width="40px" src="./images/Logo.svg" alt="logo image">
+            </a>
+            <span>Support</span>
+            <button id="mobile-navi-trigger">
+                <img width="20px" src="./images/burger.svg" alt="burger image" id="open-nav-btn">
+                <img width="16px" class="hidden" src="./images/cross.svg" alt="cross image" id="close-nav-btn">
+            </button>
+            <div class="navi-panel hidden" id="mobile-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html" class="active-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="./products.html">Books</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Support</a>
+                    </li>
+                    <li>
+                        <a href="./login.html">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- review order section -->
+        <section class="review-order">
+
+            <form class="login-form payment-form">
+                <h2>Manage Payment</h2>
+
+                <div class="input-wrapper">
+                    <!-- Card Number -->
+                    <div class="input-group">
+                        <div>
+                            <label for="card-num">Card Number</label>
+                        </div>
+                        <input name="card-num" id="card-num" type="number" required>
+                    </div>
+
+                    <!-- Expired Date -->
+                    <div class="input-group">
+                        <div>
+                            <label for="expired-date">Post Code</label>
+                        </div>
+                        <input name="expired-date" id="expired-date" type="text" required>
+                    </div>
+
+                    <!-- Security Code -->
+                    <div class="input-group">
+                        <div>
+                            <label for="security-code">Security Code</label>
+                        </div>
+                        <input name="security-code" id="security-code" type="text" required>
+                    </div>
+
+
+                    <!-- Name on Card -->
+                    <div class="input-group">
+                        <div>
+                            <label for="name-on-card">Name on Card</label>
+                        </div>
+                        <input name="name-on-card" id="name-on-card" type="text" required>
+                    </div>
+
+                    <button type="submit">
+                        Add Payment Now
+                    </button>
+                    <a class="link" href="./review-order.html">
+                        Back to review order
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.5 6H5.25C4.65326 6 4.08097 6.23705 3.65901 6.65901C3.23705 7.08097 3 7.65326 3 8.25V18.75C3 19.3467 3.23705 19.919 3.65901 20.341C4.08097 20.7629 4.65326 21 5.25 21H15.75C16.3467 21 16.919 20.7629 17.341 20.341C17.7629 19.919 18 19.3467 18 18.75V10.5M7.5 16.5L21 3M21 3H15.75M21 3V8.25"
+                                stroke="#2466CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </a>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class=" links">
+            <img width="80px" src="./images/logo-2.svg" alt="logo 2 svg">
+            <div>
+                <a href="">
+                    About Chapter One
+                    <span>
+                        Find out what we are and
+                        our stories.
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path
+                                d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </a>
+                <a href="">
+                    Contact Us
+                    <span>
+                        Get in touch so that we can help.
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path
+                                d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                </a>
+                <a href="">
+                    Browse Books
+                    <span>
+                        Discover an endless realm of liberary
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path
+                                d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </a>
+                <div class="social-media">
+                    <p>Social Media</p>
+                    <div class="icons">
+                        <a>
+                            <img src="./images/facebook.svg" alt="facebook svg">
+                        </a>
+                        <a>
+                            <img src="./images/x.svg" alt="facebook svg">
+                        </a>
+                        <a>
+                            <img src="./images/instagram.svg" alt="facebook svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img width="100%" src="./images/footer-line-break.svg" alt="footer line break svg">
+        <p>
+            Copyright © 2024 Chapter One
+        </p>
+
+
+    </footer>
+
+
+    <script src="./js/animation.js"></script>
+
+</body>
+
+
+</html>

@@ -1,5 +1,5 @@
 
-.contact-form,.add-deli-form {
+.contact-form,.add-deli-form,.payment-form {
     width: 40%;
     margin: auto;
     padding: 0;
@@ -7,7 +7,7 @@
     gap: 1rem;
     position: relative;
 }
-.add-deli-form {
+.add-deli-form, .payment-form{
     width: 50%;
     gap: 2rem;
 }
@@ -59,7 +59,7 @@ h2 {
     .contact-form > #question-boy{
         right: -4rem;
      }
-     .add-deli-form {
+     .add-deli-form,.payment-form{
         width: 80%;
      }
 }
