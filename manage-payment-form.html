@@ -20,68 +20,14 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <div class="logo-navlinks">
-            <a href="/index.html">
-                <img width="46px" src="./images/Logo.svg" alt="logo image">
-            </a>
-            <ul>
-                <li>
-                    <a href="./index.html" class="active-link">Home</a>
-                </li>
-                <li>
-                    <a href="./products.html">Books</a>
-                </li>
-                <li>
-                    <a href="./about.html">About</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Support</a>
-                </li>
-            </ul>
-        </div>
-        <a href="./login.html" class="signup-btn">
-            <button>Sign Up Now</button>
-            <div class="circle">
-                <img src="./images/outlined arrow.svg" alt="outlined arrow icon">
-            </div>
-        </a>
-        <div class="mobile-header">
-            <a href="/index.html">
-                <img width="40px" src="./images/Logo.svg" alt="logo image">
-            </a>
-            <span>Support</span>
-            <button id="mobile-navi-trigger">
-                <img width="20px" src="./images/burger.svg" alt="burger image" id="open-nav-btn">
-                <img width="16px" class="hidden" src="./images/cross.svg" alt="cross image" id="close-nav-btn">
-            </button>
-            <div class="navi-panel hidden" id="mobile-nav">
-                <ul>
-                    <li>
-                        <a href="./index.html" class="active-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="./products.html">Books</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Support</a>
-                    </li>
-                    <li>
-                        <a href="./login.html">Sign In</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <header class="header-section">
+        <input type="hidden" value="Manage Payment" id="current-page">
     </header>
 
     <!-- Main -->
     <main>
         <!-- review order section -->
         <section class="review-order">
-
             <form class="login-form payment-form">
                 <h2>Manage Payment</h2>
 
@@ -134,8 +80,6 @@
                 </div>
             </form>
         </section>
-
-
     </main>
 
     <!-- Footer -->
@@ -208,9 +152,8 @@
 
     </footer>
 
-
-    <script src="./js/animation.js"></script>
-
+    <script src="./js/header.js"></script>
+    <script src="./js/nav-toggle.js"></script>
 </body>
 
 

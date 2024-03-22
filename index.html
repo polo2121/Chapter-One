@@ -20,61 +20,8 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <div class="logo-navlinks">
-            <a href="/index.html">
-                <img width="46px" src="./images/Logo.svg" alt="logo image">
-            </a>
-            <ul>
-                <li>
-                    <a href="./index.html" class="active-link">Home</a>
-                </li>
-                <li>
-                    <a href="./products.html">Books</a>
-                </li>
-                <li>
-                    <a href="./about.html">About</a>
-                </li>
-                <li>
-                    <a href="./support.html">Support</a>
-                </li>
-            </ul>
-        </div>
-        <a href="./login.html" class="signup-btn">
-            <button>Sign Up Now</button>
-            <div class="circle">
-                <img src="./images/outlined arrow.svg" alt="outlined arrow icon">
-            </div>
-        </a>
-        <div class="mobile-header">
-            <a href="/index.html">
-                <img width="46px" src="./images/Logo.svg" alt="logo image">
-            </a>
-            <h4>Home</h4>
-            <button id="mobile-navi-trigger">
-                <img src="./images/burger.svg" alt="burger image" id="open-nav-btn">
-                <img class="hidden" src="./images/cross.svg" alt="cross image" id="close-nav-btn">
-            </button>
-            <div class="navi-panel hidden" id="mobile-nav">
-                <ul>
-                    <li>
-                        <a href="./index.html" class="active-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="./products.html">Books</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./support">Support</a>
-                    </li>
-                    <li>
-                        <a href="./login.html">Sign In</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <header class="header-section">
+        <input type="hidden" value="Home" id="current-page">
     </header>
 
     <!-- Main -->
@@ -165,10 +112,9 @@
                             powerful and practical advice on how to form good
                             habits and break bad ones. In the book, Clear outlines....
                         </div>
-
                         <!-- Book Brief Description List  -->
                         <p class="three-line-truncate slide-up" id="tb-body-1" style="--slideYValue: 100px">
-                            <a href="" id="trending-view-detail-1">
+                            <a href="./product-details.html" id="trending-view-detail-1">
                                 <button class="btn-style-2">
 
                                     View Detail
@@ -198,18 +144,51 @@
                         </p>
 
                         <p class="three-line-truncate slide-down" id="tb-body-2" style="--slideYValue: 100px">
+                            <a href="./product-details.html" id="trending-view-detail-2">
+                                <button class="btn-style-2">
+
+                                    View Detail
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 12H8M16 12C16 11.2998 14.0057 9.99153 13.5 9.5M16 12C16 12.7002 14.0057 14.0085 13.5 14.5"
+                                            stroke="#0F2F60" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M21.5 12C21.5 7.52166 21.5 5.28249 20.1088 3.89124C18.7175 2.5 16.4783 2.5 12 2.5C7.5217 2.5 5.2825 2.5 3.8912 3.89124C2.5 5.28249 2.5 7.52166 2.5 12C2.5 16.4783 2.5 18.7175 3.8912 20.1088C5.2825 21.5 7.5217 21.5 12 21.5C16.4783 21.5 18.7175 21.5 20.1088 20.1088C21.5 18.7175 21.5 16.4783 21.5 12Z"
+                                            stroke="#0F2F60" stroke-width="1.5" />
+                                    </svg>
+                                </button>
+                            </a>
                             Money―investing, personal finance, and business decisions―is typically
                             taught as a math-based field, where data and formulas tell us
                             exactly what to do. But in the real world...
                         </p>
 
                         <p class="three-line-truncate slide-down" id="tb-body-3" style="--slideYValue: 100px">
+                            <a href="./product-details.html" id="trending-view-detail-3">
+                                <button class="btn-style-2">
+
+                                    View Detail
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 12H8M16 12C16 11.2998 14.0057 9.99153 13.5 9.5M16 12C16 12.7002 14.0057 14.0085 13.5 14.5"
+                                            stroke="#0F2F60" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M21.5 12C21.5 7.52166 21.5 5.28249 20.1088 3.89124C18.7175 2.5 16.4783 2.5 12 2.5C7.5217 2.5 5.2825 2.5 3.8912 3.89124C2.5 5.28249 2.5 7.52166 2.5 12C2.5 16.4783 2.5 18.7175 3.8912 20.1088C5.2825 21.5 7.5217 21.5 12 21.5C16.4783 21.5 18.7175 21.5 20.1088 20.1088C21.5 18.7175 21.5 16.4783 21.5 12Z"
+                                            stroke="#0F2F60" stroke-width="1.5" />
+                                    </svg>
+                                </button>
+                            </a>
                             The people of Japan believe that everyone has an ikigai - a reason to jump out of bed each
                             morning. And according to the residents of the Japanese island of Okinawa - the world's
                             longest-living people - finding it is the key to a longer and more fulfilled life.
                         </p>
                     </div>
-
                     <!-- Card Footer -->
                     <div class="footer">
                         <!-- Dummy block -->
@@ -382,286 +361,369 @@
                 </div>
 
             </div>
+        </section>
 
-            <!-- Best Selection Section -->
-            <section class="best-selection">
-                <!-- Heading & Subtitle -->
-                <div class="heading">
-                    <h2 class="title">Best Fiction Books</h2>
-                    <p class="subtitle-2">
-                        Hover the mouse over the wordsfollowed Best to see
-                        best books
-                        <span class="hightlight-3">
-                            categorized by famous genres and.
-                        </span>
+        <!-- Best Selection Section -->
+        <section class="best-selection">
+            <!-- Heading & Subtitle -->
+            <div class="heading">
+                <h2 class="title">Best Fiction Books</h2>
+                <p class="subtitle-2">
+                    Hover the mouse over the wordsfollowed Best to see
+                    best books
+                    <span class="hightlight-3">
+                        categorized by famous genres and.
+                    </span>
 
-                    </p>
-                    <div class="control">
-                        <button class="arrow" id="previous">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.3333 8L3.99992 8" stroke="#1976D2" stroke-width="2"
-                                    stroke-linecap="round" />
-                                <path
-                                    d="M7.6665 3.66699L3.61601 7.71748C3.4598 7.87369 3.4598 8.12696 3.61601 8.28317L7.6665 12.3337"
-                                    stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
-                            </svg>
+                </p>
+                <div class="control">
+                    <button class="arrow" id="previous">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.3333 8L3.99992 8" stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M7.6665 3.66699L3.61601 7.71748C3.4598 7.87369 3.4598 8.12696 3.61601 8.28317L7.6665 12.3337"
+                                stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
+                        </svg>
 
-                        </button>
-                        <button class="arrow" id="next">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.66675 8L12.0001 8" stroke="#1976D2" stroke-width="2"
-                                    stroke-linecap="round" />
-                                <path
-                                    d="M8.3335 3.66699L12.384 7.71748C12.5402 7.87369 12.5402 8.12696 12.384 8.28317L8.3335 12.3337"
-                                    stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
-                            </svg>
+                    </button>
+                    <button class="arrow" id="next">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.66675 8L12.0001 8" stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M8.3335 3.66699L12.384 7.71748C12.5402 7.87369 12.5402 8.12696 12.384 8.28317L8.3335 12.3337"
+                                stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
+                        </svg>
 
 
-                        </button>
-                    </div>
+                    </button>
                 </div>
-                <!-- Slider Wrapper -->
-                <div class="bf-slider" id="bestfiction-slider">
-                    <!-- Best Fiction Slide -->
-                    <div class="slide">
-                        <!-- Book -->
-                        <div class="book-style-2">
-                            <div class="bg-circle"></div>
+            </div>
+            <!-- Slider Wrapper -->
+            <div class="bf-slider" id="bestfiction-slider">
+                <!-- Best Fiction Slide -->
+                <div class="slide">
+                    <!-- Book -->
+                    <div class="book-style-2">
+                        <div class="bg-circle"></div>
 
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/atomic_habits.jpeg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <p>Atomic Habits</p>
-                            <span>£17.99</span>
-                            <button>Add To Cart</button>
-                            <a href="">
-                                <button class="btn-style-2">
-                                    View Detail
-                                    <img src="./images/link-out.svg" alt="">
-                                </button>
-                            </a>
+                        <div class="book-cover">
+                            <img width="100%" height="100%" src="./images/atomic_habits.jpeg" alt="">
                         </div>
 
-
-                    </div>
-
-                    <div class="slide">
-                        <!-- Book -->
-                        <div class="book-style-2">
-                            <div class="bg-circle"></div>
-
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <p>Psychology of Money</p>
-                            <span>£14.99</span>
-                            <button>Add To Cart</button>
-                            <a href="">
-                                <button class="btn-style-2">
-                                    View Detail
-                                    <img src="./images/link-out.svg" alt="">
-                                </button>
-                            </a>
-                        </div>
-
-
-                    </div>
-
-                    <div class="slide">
-                        <!-- Book -->
-                        <div class="book-style-2">
-                            <div class="bg-circle"></div>
-
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/ikigai.jpeg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <p>Ikigai: The Japanese secret to a long and happy life</p>
-                            <span>£14.99</span>
-                            <button>Add To Cart</button>
-                            <a href="">
-                                <button class="btn-style-2">
-                                    View Detail
-                                    <img src="./images/link-out.svg" alt="">
-                                </button>
-                            </a>
+                        <div class="book-middle">
+                            <div class="white-pages"></div>
                         </div>
                     </div>
-
-                    <div class="slide">
-                        <!-- Book -->
-                        <div class="book-style-2">
-                            <div class="bg-circle"></div>
-
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/atomic_habits.jpeg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <p>Atomic Habits</p>
-                            <span>£18.99</span>
-                            <button>Add To Cart</button>
-                            <a href="">
-                                <button class="btn-style-2">
-                                    View Detail
-                                    <img src="./images/link-out.svg" alt="">
-                                </button>
-                            </a>
-                        </div>
-
-
+                    <div class="book-info">
+                        <p>Atomic Habits</p>
+                        <span>£17.99</span>
+                        <button>Add To Cart</button>
+                        <a href="">
+                            <button class="btn-style-2">
+                                View Detail
+                                <img src="./images/link-out.svg" alt="">
+                            </button>
+                        </a>
                     </div>
 
-                    <div class="slide">
-                        <!-- Book -->
-                        <div class="book-style-2">
-                            <div class="bg-circle"></div>
-
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <p>Atomic Habits</p>
-                            <span>£18.99</span>
-                            <button>Add To Cart</button>
-                            <a href="">
-                                <button class="btn-style-2">
-                                    View Detail
-                                    <img src="./images/link-out.svg" alt="">
-                                </button>
-                            </a>
-                        </div>
-
-
-                    </div>
-                    <div class="slide">
-                        <!-- Book -->
-                        <div class="book-style-2">
-                            <div class="bg-circle"></div>
-
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <p>Atomic Habits</p>
-                            <span>£18.99</span>
-                            <button>Add To Cart</button>
-                            <a href="">
-                                <button class="btn-style-2">
-                                    View Detail
-                                    <img src="./images/link-out.svg" alt="">
-                                </button>
-                            </a>
-                        </div>
-
-
-                    </div>
-                    <div class="slide">
-                        <!-- Book -->
-                        <div class="book-style-2">
-                            <div class="bg-circle"></div>
-
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <p>Atomic Habits</p>
-                            <span>£18.99</span>
-                            <button>Add To Cart</button>
-                            <a href="">
-                                <button class="btn-style-2">
-                                    View Detail
-                                    <img src="./images/link-out.svg" alt="">
-                                </button>
-                            </a>
-                        </div>
-
-
-                    </div>
-                    <div class="slide">
-                        <!-- Book -->
-                        <div class="book-style-2">
-                            <div class="bg-circle"></div>
-
-                            <div class="book-cover">
-                                <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
-                            </div>
-
-                            <div class="book-middle">
-                                <div class="white-pages"></div>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <p>Atomic Habits</p>
-                            <span>£18.99</span>
-                            <button>Add To Cart</button>
-                            <a href="">
-                                <button class="btn-style-2">
-                                    View Detail
-                                    <img src="./images/link-out.svg" alt="">
-                                </button>
-                            </a>
-                        </div>
-
-
-                    </div>
 
                 </div>
 
-            </section>
+                <div class="slide">
+                    <!-- Book -->
+                    <div class="book-style-2">
+                        <div class="bg-circle"></div>
 
-            <!-- Favorite Genre -->
-            <section class="favorite-genre">
-                <div class="book-shelf">
-                    <img width="100%" src="./images/Book Shelf.svg" alt="book shelf svg">
+                        <div class="book-cover">
+                            <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
+                        </div>
+
+                        <div class="book-middle">
+                            <div class="white-pages"></div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <p>Psychology of Money</p>
+                        <span>£14.99</span>
+                        <button>Add To Cart</button>
+                        <a href="">
+                            <button class="btn-style-2">
+                                View Detail
+                                <img src="./images/link-out.svg" alt="">
+                            </button>
+                        </a>
+                    </div>
+
+
                 </div>
-                <div class="popular-genre heading">
-                    <h2>People's Favorite Genres</h2>
-                    <p class="subtitle-2">
-                        Quick look at the hottest genres for everyone.
-                        Explore the jungle of popular books and
-                        <span class="hightlight-3">
-                            find books that
-                            attract you.
-                        </span>
+
+                <div class="slide">
+                    <!-- Book -->
+                    <div class="book-style-2">
+                        <div class="bg-circle"></div>
+
+                        <div class="book-cover">
+                            <img width="100%" height="100%" src="./images/ikigai.jpeg" alt="">
+                        </div>
+
+                        <div class="book-middle">
+                            <div class="white-pages"></div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <p>Ikigai: The Japanese secret to a long and happy life</p>
+                        <span>£14.99</span>
+                        <button>Add To Cart</button>
+                        <a href="">
+                            <button class="btn-style-2">
+                                View Detail
+                                <img src="./images/link-out.svg" alt="">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <!-- Book -->
+                    <div class="book-style-2">
+                        <div class="bg-circle"></div>
+
+                        <div class="book-cover">
+                            <img width="100%" height="100%" src="./images/atomic_habits.jpeg" alt="">
+                        </div>
+
+                        <div class="book-middle">
+                            <div class="white-pages"></div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <p>Atomic Habits</p>
+                        <span>£18.99</span>
+                        <button>Add To Cart</button>
+                        <a href="">
+                            <button class="btn-style-2">
+                                View Detail
+                                <img src="./images/link-out.svg" alt="">
+                            </button>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div class="slide">
+                    <!-- Book -->
+                    <div class="book-style-2">
+                        <div class="bg-circle"></div>
+
+                        <div class="book-cover">
+                            <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
+                        </div>
+
+                        <div class="book-middle">
+                            <div class="white-pages"></div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <p>Atomic Habits</p>
+                        <span>£18.99</span>
+                        <button>Add To Cart</button>
+                        <a href="">
+                            <button class="btn-style-2">
+                                View Detail
+                                <img src="./images/link-out.svg" alt="">
+                            </button>
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="slide">
+                    <!-- Book -->
+                    <div class="book-style-2">
+                        <div class="bg-circle"></div>
+
+                        <div class="book-cover">
+                            <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
+                        </div>
+
+                        <div class="book-middle">
+                            <div class="white-pages"></div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <p>Atomic Habits</p>
+                        <span>£18.99</span>
+                        <button>Add To Cart</button>
+                        <a href="">
+                            <button class="btn-style-2">
+                                View Detail
+                                <img src="./images/link-out.svg" alt="">
+                            </button>
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="slide">
+                    <!-- Book -->
+                    <div class="book-style-2">
+                        <div class="bg-circle"></div>
+
+                        <div class="book-cover">
+                            <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
+                        </div>
+
+                        <div class="book-middle">
+                            <div class="white-pages"></div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <p>Atomic Habits</p>
+                        <span>£18.99</span>
+                        <button>Add To Cart</button>
+                        <a href="">
+                            <button class="btn-style-2">
+                                View Detail
+                                <img src="./images/link-out.svg" alt="">
+                            </button>
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="slide">
+                    <!-- Book -->
+                    <div class="book-style-2">
+                        <div class="bg-circle"></div>
+
+                        <div class="book-cover">
+                            <img width="100%" height="100%" src="./images/psychology.jpg" alt="">
+                        </div>
+
+                        <div class="book-middle">
+                            <div class="white-pages"></div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <p>Atomic Habits</p>
+                        <span>£18.99</span>
+                        <button>Add To Cart</button>
+                        <a href="">
+                            <button class="btn-style-2">
+                                View Detail
+                                <img src="./images/link-out.svg" alt="">
+                            </button>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Favorite Genre -->
+        <section class="favorite-genre">
+            <div class="book-shelf">
+                <img width="100%" src="./images/Book Shelf.svg" alt="book shelf svg">
+            </div>
+            <div class="popular-genre heading">
+                <h2>People's Favorite Genres</h2>
+                <p class="subtitle-2">
+                    Quick look at the hottest genres for everyone.
+                    Explore the jungle of popular books and
+                    <span class="hightlight-3">
+                        find books that
+                        attract you.
+                    </span>
+                </p>
+                <a href="./products.html">
+                    <button class="btn-style-3">
+                        Explore Now
+                        <img src="./images/outlined arrow white.svg" alt="">
+                    </button>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Review section  -->
+        <section class="review">
+            <div class="heading">
+                <h2 class="title">Lovely Customers' Voice</h2>
+                <p class="subtitle-2">
+                    Customer’s
+                    <span class="hightlight-3">reviews</span>
+                    about books they purchased and
+                    <span class="hightlight-3">experiences</span>
+                    from our services.
+                </p>
+            </div>
+            <div class="customer-review">
+                <div class="review-slider">
+                    <div class="slide">
+                        <div class="review-book">
+                            <img src="./images/review book.svg" alt="">
+                        </div>
+                        <div class="review-card">
+                            <img width="100px" src="./images/4-review.svg" alt="review image">
+                            <p class="summarize">Excellent Service, Instant Delivery</p>
+                            <p class="message">
+                                Books’ quality is too good and delivery is so fast.
+                                Easy to browse and navigate. Love this beautiful
+                                website as well.
+                            </p>
+                            <div class="review-by">
+                                <p>Reviewed By John</p>
+                                <span>
+                                    04/02/2023
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="control">
+                    <button class="arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.3333 8L3.99992 8" stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M7.6665 3.66699L3.61601 7.71748C3.4598 7.87369 3.4598 8.12696 3.61601 8.28317L7.6665 12.3337"
+                                stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
+                    </button>
+                    <button class="arrow" id="move-right">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.66675 8L12.0001 8" stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M8.3335 3.66699L12.384 7.71748C12.5402 7.87369 12.5402 8.12696 12.384 8.28317L8.3335 12.3337"
+                                stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
+
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- reading journey section -->
+        <section class="reading-journey">
+            <div>
+                <img class="light" src="./images/light.svg" alt="light svg">
+                <div class="girl-reading">
+                    <img src="./images/girl reading.svg" alt="girl reading svg">
+                </div>
+                <div class="text-info">
+                    <h3>
+                        Haven't Start Reading Journey?
+                    </h3>
+                    <p> With our vast collection of millions of books, delve into a world of
+                        imagination and find your next captivating read!
                     </p>
                     <a href="./products.html">
                         <button class="btn-style-3">
@@ -670,99 +732,8 @@
                         </button>
                     </a>
                 </div>
+            </div>
 
-            </section>
-
-            <!-- Review section  -->
-            <section class="review">
-                <div class="heading">
-                    <h2 class="title">Lovely Customers' Voice</h2>
-                    <p class="subtitle-2">
-                        Customer’s
-                        <span class="hightlight-3">reviews</span>
-                        about books they purchased and
-                        <span class="hightlight-3">experiences</span>
-                        from our services.
-                    </p>
-                </div>
-                <div class="customer-review">
-                    <div class="review-slider">
-                        <div class="slide">
-                            <div class="review-book">
-                                <img src="./images/review book.svg" alt="">
-                            </div>
-                            <div class="review-card">
-                                <img width="100px" src="./images/4-review.svg" alt="review image">
-                                <p class="summarize">Excellent Service, Instant Delivery</p>
-                                <p class="message">
-                                    Books’ quality is too good and delivery is so fast.
-                                    Easy to browse and navigate. Love this beautiful
-                                    website as well.
-                                </p>
-                                <div class="review-by">
-                                    <p>Reviewed By John</p>
-                                    <span>
-                                        04/02/2023
-                                    </span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="control">
-                        <button class="arrow">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.3333 8L3.99992 8" stroke="#1976D2" stroke-width="2"
-                                    stroke-linecap="round" />
-                                <path
-                                    d="M7.6665 3.66699L3.61601 7.71748C3.4598 7.87369 3.4598 8.12696 3.61601 8.28317L7.6665 12.3337"
-                                    stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
-                            </svg>
-
-                        </button>
-                        <button class="arrow" id="move-right">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.66675 8L12.0001 8" stroke="#1976D2" stroke-width="2"
-                                    stroke-linecap="round" />
-                                <path
-                                    d="M8.3335 3.66699L12.384 7.71748C12.5402 7.87369 12.5402 8.12696 12.384 8.28317L8.3335 12.3337"
-                                    stroke="#1976D2" stroke-width="2" stroke-linecap="round" />
-                            </svg>
-
-
-                        </button>
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- reading journey section -->
-            <section class="reading-journey">
-                <div>
-                    <img class="light" src="./images/light.svg" alt="light svg">
-                    <div class="girl-reading">
-                        <img src="./images/girl reading.svg" alt="girl reading svg">
-                    </div>
-                    <div class="text-info">
-                        <h3>
-                            Haven't Start Reading Journey?
-                        </h3>
-                        <p> With our vast collection of millions of books, delve into a world of
-                            imagination and find your next captivating read!
-                        </p>
-                        <a href="./products.html">
-                            <button class="btn-style-3">
-                                Explore Now
-                                <img src="./images/outlined arrow white.svg" alt="">
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-            </section>
         </section>
 
         <!-- shopping cart section -->
@@ -851,47 +822,55 @@
         <div class="links">
             <img width="80px" src="./images/logo-2.svg" alt="logo 2 svg">
             <div>
-                <a href="">
-                    About Chapter One
-                    <span>
-                        Find out what we are and
-                        our stories.
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5"
-                                stroke-linecap="round" />
-                            <path
-                                d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
-                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </span>
-                </a>
-                <a href="">
-                    Contact Us
-                    <span>
-                        Get in touch so that we can help.
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5"
-                                stroke-linecap="round" />
-                            <path
-                                d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
-                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </span>
+                <!-- About -->
+                <span>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <a href="./about.html">
+                        About Chapter One
+                        <span>
+                            Find out what we are and
+                            our stories.
+                        </span>
+                    </a>
+                </span>
 
-                </a>
-                <a href="">
-                    Browse Books
-                    <span>
-                        Discover an endless realm of liberary
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5"
-                                stroke-linecap="round" />
-                            <path
-                                d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
-                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </span>
-                </a>
+                <!-- Browse Books -->
+                <span>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <a href="./contact.html">
+                        Contact Us
+                        <span>
+                            Get in touch so that we can help.
+                        </span>
+                    </a>
+                </span>
+
+                <!-- Product Books -->
+                <span>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <a href="./products.html">
+                        Browse Books
+                        <span>
+                            Discover an endless realm of liberary
+                        </span>
+                    </a>
+                </span>
+
                 <div class="social-media">
                     <p>Social Media</p>
                     <div class="icons">
@@ -917,14 +896,10 @@
     </footer>
 
 
-
-
     <script src="./js/slide.js"></script>
     <script src="./js/add-to-cart.js"></script>
+    <script src="./js/header.js"></script>
     <script src="./js/nav-toggle.js"></script>
-
-
-
 </body>
 
 

@@ -1,8 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   scroll-behavior: smooth;
+  /* box-sizing: border-box; */
+}
+header ul {
+  padding: 1rem;
 }
 
 /* Hero-Section */
@@ -12,7 +15,7 @@
   align-items: center;
   height: 100vh;
   position: relative;
-
+  box-sizing: border-box;
 
 }
 .hero-section div {
@@ -512,7 +515,10 @@
       margin-left: auto;
     }
     .favorite-genre > .book-shelf > img {
-      width: 260px;
+      width: 200px;
+      /* padding-left: 4rem; */
+      display: none;
+
     }
     .favorite-genre > .popular-genre {
       width: 100%;
@@ -594,6 +600,11 @@
   }
 }
 /* Mobile devices */
+@media screen and (max-width: 548px) { 
+  .hero-section div #true,.hero-section div #romance {
+    display: none;
+  }
+}
 @media screen and (max-width: 480px) {
   .trending-books-list{
     flex-direction: column;
@@ -649,9 +660,6 @@
     top: 4%;
     width: 140px;
   }
-  .hero-section div #true,.hero-section div #romance {
-    display: none;
-  }
   .hero-section div #pen {
     width: 60px;
     right: 30px;
@@ -693,6 +701,9 @@
     padding: 1.2rem;
     border-radius: 20px;
    }
+  .trending .control {
+    justify-content: flex-start;
+  }
 }
 
 /* Smallest Mobile devices */

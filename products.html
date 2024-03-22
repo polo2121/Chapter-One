@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>Books Page</title>
 
     <!-- Link for two fonts used in the website -->
     <link href="https://api.fontshare.com/v2/css?f[]=erode@700,300,500,600,400&f[]=recia@700,500,600,400&display=swap"
@@ -18,57 +18,8 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <div class="logo-navlinks">
-            <a href="/index.html">
-                <img width="46px" src="./images/Logo.svg" alt="logo image">
-            </a>
-            <ul>
-                <li>
-                    <a href="./index.html" class="active-link">Home</a>
-                </li>
-                <li>
-                    <a href="./products.html">Books</a>
-                </li>
-                <li>
-                    <a href="./about.html">About</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Support</a>
-                </li>
-            </ul>
-        </div>
-        <a href="./login.html" class="signup-btn">
-            <button>Sign Up Now</button>
-            <div class="circle">
-                <img src="./images/outlined arrow.svg" alt="outlined arrow icon">
-            </div>
-        </a>
-        <div class="mobile-header">
-            <a href="/index.html">
-                <img width="46px" src="./images/Logo.svg" alt="logo image">
-            </a>
-            <button>
-                <img src="./images/burger.svg" alt="burger image">
-            </button>
-            <div class="nav-panel">
-                <ul>
-                    <li>
-                        <a href="./index.html" class="active-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="./products.html">Books</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Support</a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
+    <header class="header-section">
+        <input type="hidden" value="Books" id="current-page">
     </header>
 
 
@@ -144,7 +95,7 @@
                 </div>
 
                 <div class="product">
-                    <a class="view-detail-btn" href="">
+                    <a class="view-detail-btn" href="./product-details.html">
                         <button class="btn-style-2">
                             View Detail
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -178,7 +129,7 @@
                     </div>
 
                     <div class="details dna">
-                        <a class="name" href="">
+                        <a class="name" href="./product-details.html">
                             <span>
                                 Ikigai: The Japanese Scret
                                 to Long and Happy life
@@ -283,47 +234,55 @@
         <div class="links">
             <img width="80px" src="./images/logo-2.svg" alt="logo 2 svg">
             <div>
-                <a href="">
-                    About Chapter One
-                    <span>
-                        Find out what we are and
-                        our stories.
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5"
-                                stroke-linecap="round" />
-                            <path
-                                d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
-                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </span>
-                </a>
-                <a href="">
-                    Contact Us
-                    <span>
-                        Get in touch so that we can help.
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5"
-                                stroke-linecap="round" />
-                            <path
-                                d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
-                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </span>
+                <!-- About -->
+                <span>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <a href="./about.html">
+                        About Chapter One
+                        <span>
+                            Find out what we are and
+                            our stories.
+                        </span>
+                    </a>
+                </span>
 
-                </a>
-                <a href="">
-                    Browse Books
-                    <span>
-                        Discover an endless realm of liberary
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5"
-                                stroke-linecap="round" />
-                            <path
-                                d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
-                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </span>
-                </a>
+                <!-- Browse Books -->
+                <span>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <a href="./contact.html">
+                        Contact Us
+                        <span>
+                            Get in touch so that we can help.
+                        </span>
+                    </a>
+                </span>
+
+                <!-- Product Books -->
+                <span>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.0416 16.9706H8.48525" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M20.4131 12.1135C20.4131 12.1135 24.7324 15.7612 24.7324 16.9703C24.7324 18.1793 20.413 21.827 20.413 21.827"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <a href="./products.html">
+                        Browse Books
+                        <span>
+                            Discover an endless realm of liberary
+                        </span>
+                    </a>
+                </span>
+
                 <div class="social-media">
                     <p>Social Media</p>
                     <div class="icons">
@@ -350,6 +309,8 @@
 
 
     <script src="./js/add-to-cart.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/nav-toggle.js"></script>
 
 </body>
 
